@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: var(--font-sans, ui-sans-serif, system-ui, sans-serif);
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace;
+  
+  /* Industrial Color Palette */
+  --color-orange: #FF9800;
+  --color-charcoal: #1A1A1A;
+  --color-grey: #222222;
+  --color-white: #FFFFFF;
+  --color-off-white: #F8F9FA;
+  --color-text-grey: #666666;
+  --color-yellow: #FFC107;
+}
+
+@layer base {
+  * {
+    @apply border-gray-300;
+  }
+  
+  body {
+    @apply bg-white text-gray-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-charcoal;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  h3 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+  
+  p {
+    @apply leading-relaxed text-base md:text-lg text-gray-600;
+  }
+}
