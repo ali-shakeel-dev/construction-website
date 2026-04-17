@@ -64,14 +64,14 @@ const Vehicles = () => {
                 className="overflow-hidden border border-gray-300 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
-                  {/* Image */}
-                  <div className="aspect-square bg-gray-300 overflow-hidden md:order-1">
-                    <img
-                      src={fleet.image}
-                      alt={fleet.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
+{/* Image */}
+<div className="h-64 md:h-full min-h-[280px] bg-gray-300 overflow-hidden md:order-1">
+  <img
+    src={fleet.image}
+    alt={fleet.title}
+    className="w-full h-full object-cover"
+  />
+</div>
 
                   {/* Content */}
                   <div className="p-8 md:order-2 flex flex-col justify-center">

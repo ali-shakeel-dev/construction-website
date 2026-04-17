@@ -45,14 +45,7 @@ const Portfolio = () => {
       location: 'Industrial City',
       description: 'Manufacturing facility optimized for performance and sustainability.',
       image: '/images/project-6.jpg',
-    },
-    {
-      name: 'Yanbu University College',
-      client: 'Ministry of Education',
-      location: 'Yanbu',
-      description: 'Modern educational campus with advanced infrastructure.',
-      image: '/images/project-7.jpg',
-    },
+    }
   ]
 
   return (

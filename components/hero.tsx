@@ -26,14 +26,22 @@ const Hero = () => {
           className="space-y-6 max-w-3xl"
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-            Building the Future with <span className="text-orange-400">Precision and Scale</span>
+            Your Construction Partner <span className="text-orange-400">with Skilled Manpower</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-100 leading-relaxed">
             Delivering large-scale construction, manpower, and infrastructure support services across Saudi Arabia with unmatched reliability and execution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-            <a href="#portfolio" className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 font-semibold flex items-center justify-center gap-2 transition-colors hover:scale-105 duration-200 cursor-pointer">
-              See our work <ArrowRight size={20} />
+            <a
+              href="#portfolio"
+              className="group relative bg-orange-500 text-white px-8 py-3 font-semibold flex items-center justify-center gap-2 overflow-hidden cursor-pointer transform transition-transform duration-200 hover:scale-105"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                See our work <ArrowRight size={20} />
+              </span>
+              <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+                <div className="relative h-full w-8 bg-white/30"></div>
+              </div>
             </a>
           </div>
         </motion.div>

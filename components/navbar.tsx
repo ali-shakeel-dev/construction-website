@@ -59,8 +59,17 @@ const Navbar = () => {
               </button>
             ))}
           </div>
-          <a href="tel:0509784533" className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 font-semibold transition-colors hover:scale-105 duration-200 cursor-pointer">
-            Call Now
+          <a
+            href="tel:0509784533"
+            className="hidden md:block group relative bg-orange-500 text-white px-6 py-3 font-semibold flex items-center justify-center overflow-hidden transition-transform duration-200 hover:scale-105 cursor-pointer"
+          >
+            <span className="relative z-10">
+              Call Now
+            </span>
+
+            <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]">
+              <div className="relative h-full w-8 bg-white/30"></div>
+            </div>
           </a>
           <button
             onClick={() => setIsOpen(!isOpen)}

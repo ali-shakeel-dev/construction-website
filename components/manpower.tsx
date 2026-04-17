@@ -1,13 +1,20 @@
 'use client'
 
-import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react' 
 import { Wrench, Zap, Flame, Users, Shield, Briefcase, ChevronDown } from 'lucide-react'
 
 const Manpower = () => {
   const [activeTab, setActiveTab] = useState(0)
   const [mobileOpen, setMobileOpen] = useState(false)
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveTab((prev) => (prev + 1) % categories.length)
+    }, 4500)
+
+    return () => clearInterval(interval)
+  }, [])
   const categories = [
     {
       icon: Wrench,
