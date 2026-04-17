@@ -14,25 +14,25 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'Rakan Al-Bina Contracting Co. - Construction & Manpower Solutions',
+  title: 'MAK Construction - Construction & Manpower Solutions',
   description: 'Delivering large-scale construction, manpower, and infrastructure support services across Saudi Arabia with unmatched reliability and execution.',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/mak-construction.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/mak-construction.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/icon.svg',
+        url: '/mak-construction.png',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/mak-construction.png',
   },
 }
 
