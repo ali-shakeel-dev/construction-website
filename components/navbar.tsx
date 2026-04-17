@@ -18,7 +18,6 @@ const Navbar = () => {
   }, [])
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Manpower', href: '#manpower' },
     { name: 'Vehicles', href: '#vehicles' },
@@ -34,7 +33,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${hasBackground ? 'bg-white border-b border-gray-300' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${hasBackground ? 'border-b border-gray-300 bg-white' : 'border-none bg-transparent '}`}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-2">
@@ -44,21 +43,22 @@ const Navbar = () => {
           </span>
         </div>
 
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <button
-              key={link.name}
-              onClick={() => scrollToSection(link.href)}
-              className={`transition-colors text-sm font-medium ${hasBackground ? 'text-gray-700 hover:text-orange-500' : 'text-white hover:text-orange-300'}`}
-            >
-              {link.name}
-            </button>
-          ))}
-        </div>
+
 
         {/* CTA Button + Mobile Menu Button */}
         <div className="flex items-center gap-4">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <button
+                key={link.name}
+                onClick={() => scrollToSection(link.href)}
+                className={`cursor-pointer transition-colors text-sm font-medium ${hasBackground ? 'text-gray-700 hover:text-orange-500' : 'text-white hover:text-orange-300'}`}
+              >
+                {link.name}
+              </button>
+            ))}
+          </div>
           <a href="tel:0509784533" className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 font-semibold transition-colors hover:scale-105 duration-200 cursor-pointer">
             Call Now
           </a>

@@ -5,19 +5,19 @@ import { ArrowRight } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section id="home" className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+    <section id="home" className="h-screen relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden flex items-center justify-center">
       {/* Background Image with Overlay */}
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `url('/images/hero-bg.jpg')`,
+          backgroundImage: `url('/images/hero-bg.webp')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       />
       <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative max-w-7xl mx-auto px-6 h-screen flex flex-col items-center justify-center text-center">
+      <div className="relative max-w-7xl mx-auto px-6 flex flex-col items-center justify-center text-center">
         {/* Hero Content */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -39,53 +39,6 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      {/* Logo Carousel Section */}
-      <div className="relative bg-charcoal py-16">
-        <div className="max-w-7xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12"
-          >
-            <p className="text-gray-400 text-sm font-semibold uppercase tracking-widest">Our Partners</p>
-          </motion.div>
-
-          {/* Carousel Container */}
-          <div className="relative overflow-hidden">
-            <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-charcoal to-transparent z-10" />
-            <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-charcoal to-transparent z-10" />
-            
-            <motion.div
-              animate={{ x: [0, -1000] }}
-              transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-              className="flex gap-12 w-max"
-            >
-              {[...Array(2)].map((_, setIdx) => (
-                <div key={setIdx} className="flex gap-12">
-                  {[
-                    { emoji: '🏗️', name: 'STATSIG' },
-                    { emoji: '⚙️', name: 'Cortex' },
-                    { emoji: '🔧', name: '2X' },
-                    { emoji: '🏭', name: 'Tennr' },
-                    { emoji: '🏢', name: 'Maven' },
-                  ].map((logo, idx) => (
-                    <div
-                      key={idx}
-                      className="flex items-center justify-center min-w-max px-8 py-4"
-                    >
-                      <div className="flex flex-col items-center gap-2">
-                        <div className="text-4xl">{logo.emoji}</div>
-                        <div className="text-sm text-gray-300 font-semibold whitespace-nowrap">{logo.name}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </motion.div>
-          </div>
-        </div>
-      </div>
     </section>
   )
 }

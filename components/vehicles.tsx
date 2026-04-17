@@ -17,7 +17,7 @@ const Vehicles = () => {
         'Regular Maintenance',
       ],
       description: 'Efficient and safe workforce transportation for large construction teams.',
-      image: '/images/buses.jpg',
+      image: '/images/buses.webp',
     },
     {
       icon: Truck,
@@ -31,7 +31,7 @@ const Vehicles = () => {
         'All-weather ready',
       ],
       description: 'Flexible mobility for supervisors and site operations.',
-      image: '/images/trucks.jpg',
+      image: '/images/trucks.webp',
     },
   ]
 

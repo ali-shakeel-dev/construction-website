@@ -68,16 +68,15 @@ const Manpower = () => {
 
         {/* Desktop Tabs */}
         <div className="hidden md:block mb-8">
-          <div className="flex gap-2 border-b border-gray-300">
+          <div className="flex gap-2 border-b border-gray-300 flex items-center justify-center">
             {categories.map((category, idx) => (
               <button
                 key={idx}
                 onClick={() => setActiveTab(idx)}
-                className={`px-6 py-3 font-semibold text-sm transition-all ${
-                  activeTab === idx
-                    ? 'bg-orange-500 text-white'
-                    : 'bg-transparent text-gray-600 hover:text-charcoal'
-                }`}
+                className={`cursor-pointer px-6 py-3 font-semibold text-sm transition-all ${activeTab === idx
+                  ? 'bg-orange-500 text-white'
+                  : 'bg-transparent text-gray-600 hover:text-charcoal'
+                  }`}
               >
                 {category.title}
               </button>

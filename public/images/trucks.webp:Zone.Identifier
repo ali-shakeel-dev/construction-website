@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/efe44825-8c35-4971-982a-87b7bbb552a5/Gemini_Generated_Image_e68moee68moee68m.webp?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20260417%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20260417T075224Z&X-Amz-Expires=86400&X-Amz-Signature=0402ce332edba6896e1381935bf4fde0fd6a6f37cfeba2dbc58337d61eb09c69&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Gemini_Generated_Image_e68moee68moee68m.webp%22&response-content-type=image%2Fwebp&x-id=GetObject
