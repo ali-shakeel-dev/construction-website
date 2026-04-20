@@ -55,11 +55,9 @@ const Footer = () => {
           {/* Brand */}
           <motion.div variants={itemVariants} className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 border border-orange-500 flex items-center justify-center text-orange-500 text-[11px] font-semibold">
-                MAK
-              </div>
+              <img src="MAKContractingWhiteLOGO.png" width={80} />
               <span className="font-medium text-lg text-white">
-                Construction
+                MAK Contracting
               </span>
             </div>
 

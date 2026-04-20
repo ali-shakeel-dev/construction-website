@@ -52,31 +52,38 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        hasBackground
-          ? 'border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80'
-          : 'border-none bg-transparent'
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${hasBackground
+        ? 'border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80'
+        : 'border-none bg-transparent'
+        }`}
     >
       <motion.div
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className={`max-w-7xl mx-auto px-6 ${
-          hasBackground ? 'py-3' : 'py-5'
-        } flex items-center justify-between transition-all duration-300`}
+        className={`max-w-7xl mx-auto px-6 ${hasBackground ? 'py-3' : 'py-5'
+          } flex items-center justify-between transition-all duration-300`}
       >
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 border border-orange-500 flex items-center justify-center text-orange-500 text-[11px] font-semibold">
+          {/* <div className="w-8 h-8 border border-orange-500 flex items-center justify-center text-orange-500 text-[11px] font-semibold">
             MAK
-          </div>
+          </div> */}
+          <img
+            src={
+              hasBackground
+                ? '/MAKContractingLOGO.png'
+                : '/MAKContractingWhiteLOGO.png'
+            }
+            alt="MAK Contracting"
+            className="transition-all duration-300"
+            width={80}
+          />
           <span
-            className={`font-medium text-lg transition-colors ${
-              hasBackground ? 'text-charcoal' : 'text-white'
-            }`}
+            className={`font-medium text-lg transition-colors ${hasBackground ? 'text-charcoal' : 'text-white'
+              }`}
           >
-            Construction
+            MAK Contracting
           </span>
         </div>
 
@@ -91,13 +98,12 @@ const Navbar = () => {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className={`text-sm font-medium transition-colors ${
-                    isActive
-                      ? 'text-orange-500'
-                      : hasBackground
+                  className={`text-sm font-medium transition-colors ${isActive
+                    ? 'text-orange-500'
+                    : hasBackground
                       ? 'text-gray-500 hover:text-charcoal'
                       : 'text-gray-300 hover:text-white'
-                  }`}
+                    }`}
                 >
                   {link.name}
                 </button>
@@ -107,7 +113,7 @@ const Navbar = () => {
 
           {/* CTA */}
           <a
-            href="tel:0509784533"
+            href="tel:+966554051906"
             className="hidden md:block group relative bg-orange-500 text-white px-6 py-3 font-medium flex items-center justify-center overflow-hidden transition-transform duration-200 hover:scale-[1.03]"
           >
             <span className="relative z-10">Request Call</span>
@@ -120,9 +126,8 @@ const Navbar = () => {
           {/* Mobile Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden p-2 transition-colors ${
-              hasBackground ? 'hover:bg-gray-100' : 'hover:bg-white/10'
-            }`}
+            className={`md:hidden p-2 transition-colors ${hasBackground ? 'hover:bg-gray-100' : 'hover:bg-white/10'
+              }`}
           >
             {isOpen ? (
               <X
@@ -155,11 +160,10 @@ const Navbar = () => {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className={`block w-full text-left py-2 font-medium transition-colors ${
-                    isActive
-                      ? 'text-orange-500'
-                      : 'text-gray-700 hover:text-orange-500'
-                  }`}
+                  className={`block w-full text-left py-2 font-medium transition-colors ${isActive
+                    ? 'text-orange-500'
+                    : 'text-gray-700 hover:text-orange-500'
+                    }`}
                 >
                   {link.name}
                 </button>

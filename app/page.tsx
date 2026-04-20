@@ -11,12 +11,14 @@ import AreasOfOperation from '@/components/areas-of-operation'
 import Contact from '@/components/contact'
 import Footer from '@/components/footer'
 import ScrollToTop from '@/components/scroll-to-top'
+import Stats from '@/components/stats'
 
 export default function Home() {
   return (
     <main className="overflow-x-hidden">
       <Navbar />
       <Hero />
+      <Stats />
       <Portfolio />
       <Manpower />
       <Vehicles />

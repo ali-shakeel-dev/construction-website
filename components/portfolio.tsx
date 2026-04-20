@@ -10,7 +10,7 @@ const Portfolio = () => {
       location: 'Riyadh',
       description:
         'One of the world’s largest urban parks featuring green spaces, recreational facilities, and cultural venues.',
-      image: '/images/project-1.jpg',
+      image: '/images/KingSalmanPark.jpg',
     },
     {
       name: 'Ithra Cultural Center',
@@ -18,7 +18,7 @@ const Portfolio = () => {
       location: 'Dhahran',
       description:
         'A landmark cultural destination with world-class architecture and facilities.',
-      image: '/images/project-2.jpg',
+      image: '/images/IthraCulturalCenter.webp',
     },
     {
       name: 'Chamber of Commerce Tower',
@@ -26,7 +26,7 @@ const Portfolio = () => {
       location: 'Riyadh',
       description:
         'Modern commercial high-rise offering premium office infrastructure.',
-      image: '/images/project-3.jpg',
+      image: '/images/ChamberofCommerceTower.jpg',
     },
     {
       name: 'NEOM Hospital',
@@ -34,7 +34,7 @@ const Portfolio = () => {
       location: 'NEOM City',
       description:
         'Advanced healthcare facility with cutting-edge technology and sustainable design.',
-      image: '/images/project-4.jpg',
+      image: '/images/NEOMHospital.jpg',
     },
     {
       name: 'Aramco Stadium',
@@ -42,7 +42,7 @@ const Portfolio = () => {
       location: 'Dhahran',
       description:
         'Large-scale sports infrastructure with modern engineering and design.',
-      image: '/images/project-5.jpg',
+      image: '/images/AramcoStadium.png',
     },
     {
       name: 'SNT Gulf Factory',
@@ -50,7 +50,7 @@ const Portfolio = () => {
       location: 'Industrial City',
       description:
         'Manufacturing facility optimized for performance and sustainability.',
-      image: '/images/project-6.jpg',
+      image: '/images/SNTGulfFactory.png',
     },
   ]
 
@@ -98,7 +98,7 @@ const Portfolio = () => {
             >
 
               <div className="relative aspect-video overflow-hidden bg-gray-100 group">
-                
+
                 {/* Image */}
                 <img
                   src={project.image}

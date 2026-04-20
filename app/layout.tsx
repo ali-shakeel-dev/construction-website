@@ -3,7 +3,7 @@ import { Inter, Montserrat } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   variable: '--font-sans',
 })
@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: 'MAK Construction - Construction & Manpower Solutions',
+  title: 'MAK Contracting - Construction & Manpower Solutions',
   description: 'Delivering large-scale construction, manpower, and infrastructure support services across Saudi Arabia with unmatched reliability and execution.',
   generator: 'v0.app',
   icons: {
