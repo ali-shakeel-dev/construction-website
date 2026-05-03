@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react'
 const Hero = () => {
   return (
     <section id="home" className="h-screen relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden flex items-center justify-center">
-      
+
       {/* Background */}
       <div
         className="absolute inset-0"
@@ -27,14 +27,21 @@ const Hero = () => {
           className="space-y-6 max-w-3xl"
         >
 
-          {/* Small label (adds authority instantly) */}
+          {/* Small label */}
           <p className="text-[11px] tracking-[0.14em] uppercase text-orange-400">
             Construction • Manpower • Infrastructure
           </p>
 
-          {/* Headline (fixed) */}
+          {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white leading-tight">
-            Your Construction Partner with<span className="text-orange-400"> Skilled Manpower</span>
+            Your Construction Partner
+            <br className="hidden md:block" />
+            <span className="block mt-2">
+              with Skilled Manpower
+            </span>
+            <span className="block text-orange-400">
+              Heavy Equipment & Materials
+            </span>
           </h1>
 
           {/* Description (clean + human) */}
