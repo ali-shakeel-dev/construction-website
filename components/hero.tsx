@@ -77,15 +77,9 @@ const Hero = () => {
           </p>
 
           {/* Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white leading-tight">
-            Your Construction Partner
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-orange-400 leading-tight">
+            Everything Your Project Needs — One Platform
             <br className="hidden md:block" />
-            <span className="block mt-2">
-              with Skilled Manpower
-            </span>
-            <span className="block text-orange-400">
-              Heavy Equipment & Materials
-            </span>
           </h1>
 
           {/* Description */}

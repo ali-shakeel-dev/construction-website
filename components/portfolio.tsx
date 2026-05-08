@@ -10,7 +10,15 @@ const Portfolio = () => {
       location: 'Riyadh',
       description:
         'One of the world’s largest urban parks featuring green spaces, recreational facilities, and cultural venues.',
-      image: '/images/KingSalmanPark.jpg',
+      image: '/images/King_Salman_Park.jpg',
+    },
+    {
+      name: 'Ithra Cultural Center',
+      client: 'Saudi Aramco',
+      location: 'Dhahran, Saudi Arabia',
+      description:
+        'World-class cultural and knowledge center supporting education, exhibitions, arts, and innovation initiatives.',
+      image: '/images/Ithra_cultural_center.webp',
     },
     {
       name: 'Chamber of Commerce Tower',
@@ -18,7 +26,7 @@ const Portfolio = () => {
       location: 'Riyadh',
       description:
         'Modern commercial high-rise offering premium office infrastructure.',
-      image: '/images/ChamberofCommerceTower.jpg',
+      image: '/images/Chamber_of_Commerce_Tower.jpg',
     },
     {
       name: 'NEOM Hospital',
@@ -26,7 +34,7 @@ const Portfolio = () => {
       location: 'NEOM City',
       description:
         'Advanced healthcare facility with cutting-edge technology and sustainable design.',
-      image: '/images/NEOMHospital.jpg',
+      image: '/images/NEOM_Hospital.jpg',
     },
     {
       name: 'Aramco Stadium',
@@ -34,7 +42,7 @@ const Portfolio = () => {
       location: 'Dhahran',
       description:
         'Large-scale sports infrastructure with modern engineering and design.',
-      image: '/images/AramcoStadium.png',
+      image: '/images/Aramco_Stadium.webp',
     },
     {
       name: 'SNT Gulf Factory',
@@ -83,15 +91,7 @@ const Portfolio = () => {
       description:
         'Entertainment and cultural development project featuring modern art, performance, and recreational facilities.',
       image: '/images/Qidiya_art_center.jpg',
-    },
-    {
-      name: 'Ithra Cultural Center',
-      client: 'Saudi Aramco',
-      location: 'Dhahran, Saudi Arabia',
-      description:
-        'World-class cultural and knowledge center supporting education, exhibitions, arts, and innovation initiatives.',
-      image: '/images/Ithra_cultural_center.webp',
-    },
+    }
   ]
 
   return (
