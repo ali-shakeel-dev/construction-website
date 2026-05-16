@@ -12,6 +12,7 @@ import Contact from '@/components/contact'
 import Footer from '@/components/footer'
 import ScrollToTop from '@/components/scroll-to-top'
 import Stats from '@/components/stats'
+import HeavyEquipments from '@/components/heavy-equipments'
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Stats />
       <Portfolio />
       <Manpower />
+      <HeavyEquipments />
       <Vehicles />
       <Safety />
       <Clients />
