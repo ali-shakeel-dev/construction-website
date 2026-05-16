@@ -330,14 +330,32 @@ const Manpower = () => {
                 {activeCategory.description}
               </p>
 
-              <ul className="space-y-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {activeCategory.bullets.map((bullet, idx) => (
-                  <li key={idx} className="flex items-start gap-2 text-sm text-gray-600">
-                    <span className="w-1 h-1 rounded-full bg-orange-500 flex-shrink-0 mt-[6px]" />
-                    {bullet}
-                  </li>
+                  <motion.div
+                    key={idx}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: idx * 0.03 }}
+                    className="
+                              group
+                              border border-gray-200
+                              bg-gray-50
+                              rounded-xl
+                              px-4 py-3
+                              text-sm text-gray-700
+                              font-medium
+                              hover:border-orange-300
+                              hover:bg-orange-50
+                              transition-all duration-300
+                            ">
+                    <div className="flex items-center gap-3">
+                      <div className="w-2 h-2 rounded-full bg-orange-500 flex-shrink-0" />
+                      <span>{bullet}</span>
+                    </div>
+                  </motion.div>
                 ))}
-              </ul>
+              </div>
 
             </div>
           </div>

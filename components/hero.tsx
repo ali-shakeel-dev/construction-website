@@ -84,7 +84,7 @@ const Hero = () => {
 
           {/* Description */}
           <p className="text-[16px] md:text-lg text-gray-200 leading-relaxed">
-            Delivering construction, manpower, and infrastructure support across Saudi Arabia with reliable execution on every project.
+            Delivering construction, manpower, and infrastructure support across Saudi Arabia with reliable execution on every project. All kind of material and equipment supply.
           </p>
 
           {/* CTA */}
