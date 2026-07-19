@@ -113,7 +113,7 @@ const Navbar = () => {
 
           {/* CTA */}
           <a
-            href="tel:+966554051906"
+            href="tel:+966501321636"
             className="hidden md:block group relative bg-orange-500 text-white px-6 py-3 font-medium flex items-center justify-center overflow-hidden transition-transform duration-200 hover:scale-[1.03]"
           >
             <span className="relative z-10">Request Call</span>

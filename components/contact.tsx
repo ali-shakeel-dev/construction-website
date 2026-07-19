@@ -53,6 +53,7 @@ const Contact = () => {
               </svg>
               <div>
                 <p className="text-[11px] font-medium tracking-widest uppercase text-gray-400 mb-1">Phone</p>
+                <a href="tel:+966554051906" className="block text-sm text-charcoal hover:text-orange-500 transition-colors leading-loose">+966 50 132 1636</a>
                 <a href="tel:+966554051906" className="block text-sm text-charcoal hover:text-orange-500 transition-colors leading-loose">+966 55 405 1906</a>
               </div>
             </div>
